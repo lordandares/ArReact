@@ -1,8 +1,12 @@
 platform :ios, '10.0'
 
 target 'ArReact' do
+  pod 'AppCenter/Crashes', '~> 2.5.0'
+  pod 'AppCenter/Analytics', '~> 2.5.0'
+  pod 'AppCenterReactNativeShared', '~> 2.5.0'
     use_frameworks!
     pod 'ViroReact', :path => '../node_modules/react-viro/ios/'
+  platform :ios, '9.0'
     pod 'ViroKit', :path => '../node_modules/react-viro/ios/dist/ViroRenderer/'
   end
 
